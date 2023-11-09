@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <title>Sanhose</title>
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="Logo.png" alt="Логотип">
+  </div>
+  <div class="header-buttons">
+    <a href="Register.html" class="btn register-btn">Register</a>
+    <a href="Login.html" class="btn login-btn">Login</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="Main.html">Main</a></li>
+      <li><a href="FAQ.html">Questions</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+      <li><a href="InfoTable.html">Your fav</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="background"></div>
+<div class="content">
+  <div class="block first">
+    <div class="chat-block">
+      <div id="chat-box"></div>
+    </div>
+    <div class="chat-block">
+      <div class="message-container user1">
+        <div class="input-container">
+          <input type="text" id="user1-input" placeholder="User1">
+          <button onclick="sendMessage('user1')">Send</button>
+        </div>
+      </div>
+      <div class="message-container user2">
+        <div class="input-container">
+          <input type="text" id="user2-input" placeholder="User2">
+          <button onclick="sendMessage('user2')">Send</button>
+        </div>
+      </div>
+    </div>
+    <a href="User_Page.html"><button>Back</button></a>
+  </div>
+</div>
+</div>
+
+<footer>
+  <span class="loader"></span>
+  <p>Contact us:</p>
+  <div class="contact-icons">
+    <a href="tel:тут-ваш-номер-телефону"><i class="fas fa-phone"></i></a>
+    <a href="mailto:тут-ваш-email"><i class="fas fa-envelope"></i></a>
+    <a href="https://t.me/ваш-Telegram-контакт"><i class="fab fa-telegram"></i></a>
+    <a href="https://wa.me/ваш-номер-WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="viber://chat?number=ваш-номер-Viber"><i class="fab fa-viber"></i></a>
+  </div>
+</footer>
+<script src="scriptChat.js"></script>
+</body>
+</html>
